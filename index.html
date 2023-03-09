@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0 auto;
+        }
+        .slika{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(#51bcc4 80%, #e9e2e1 80%);
+            border-radius: 8px;
+        }
+        .pozadina{
+            background-image: url(image.png);
+            height: 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .tekst{
+            font-size: medium;
+            text-align: center;
+            padding: 20px;
+        }
+        .kontejner{
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 15px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .kontejner {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+        @media screen and (max-width: 768px) {
+        .kontejner {
+        grid-template-columns: repeat(2, 1fr);
+
+        }
+        }
+
+        @media screen and (max-width: 414px) {
+            .kontejner {
+        grid-template-columns: repeat(1, 1fr);
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Gallery Heading</h2>
+    <div class="kontejner">
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div class="slika">
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+        <div class="slika">
+            <div class="pozadina"></div>
+            <div class="tekst">Image Title</div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>
